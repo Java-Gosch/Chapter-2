@@ -10,12 +10,20 @@ public class MadLibs {
         String noun;
         String nounPlural;
 
+        Scanner input = new Scanner(System.in);
 
         int a;
         int b;
         int c;
 
-        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number >>>");
+        a = input.nextInt();
+
+        System.out.print("Enter another number >>>");
+        b = input.nextInt();
+
+        c = a%b;
+
         System.out.print("Enter a color >>>");
         color = input.nextLine();
         System.out.print("Enter a word ending in EST >>>");
@@ -32,14 +40,7 @@ public class MadLibs {
 
         System.out.println("The " + color + " Car is the " + wordEst + " Car of all and is fueled by " + bodyPart + ". " + animalPet + " went to " + noun + " and asked for a " + nounPlural);
 
-
-        System.out.print("Enter a number >>>");
-        a = input.nextInt();
-
-        System.out.print("Enter another number >>>");
-        b = input.nextInt();
-
-        c = a%b;
+        
 
     }
 }
